@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho-principal {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+}
+
+.menu-navegacao {
+    border-bottom: 1px solid gray;
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-navegacao ul li {
+    display: inline;
+}
+
+.menu-navegacao ul li a {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: darkblue;
+}
+
+.menu-navegacao ul li a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.container {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.ofertas {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ofertas .item {
+    border: 1px solid gray;
+    width: 260px;
+    padding: 10px;
+    text-align: center;
+}
+
+.ofertas .item img {
+    width: 100%;
+}
+
+.rodape {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+}

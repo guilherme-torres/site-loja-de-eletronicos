@@ -1,0 +1,19 @@
+#banner {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.container {
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.links a img {
+    max-width: 100%;
+}
