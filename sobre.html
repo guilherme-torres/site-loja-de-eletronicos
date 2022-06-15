@@ -37,6 +37,32 @@
             </p>
         </div>
         <h2>Fale conosco</h2>
+        <form id="formulario">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf">
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone">
+
+            <label for="assunto">Assunto</label>
+            <select id="assunto">
+                <option value="duvidas">Dúvidas</option>
+                <option value="sugestoes">Sugestões</option>
+                <option value="suporte">Suporte</option>
+            </select>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem"></textarea>
+
+            <button type="submit" id="botao-enviar">Enviar</button>
+        </form>
+        <p id="dados-formulario"></p>
     </div>
 
     <footer class="rodape">
@@ -47,5 +73,21 @@
             Teresina - PI
         </p>
     </footer>
+
+    <script>
+        const botaoEnviar = document.getElementById('botao-enviar')
+        botaoEnviar.onclick = mostrarDadosFormulario
+        function mostrarDadosFormulario(e) {
+            e.preventDefault()
+            const cpf = document.getElementById('cpf').value
+            const nome = document.getElementById('nome').value
+            const email = document.getElementById('email').value
+            const telefone = document.getElementById('telefone').value
+            const assunto = document.getElementById('assunto').value
+            const mensagem = document.getElementById('mensagem').value
+
+            document.getElementById('dados-formulario').textContent = `${cpf} | ${nome} | ${email} | ${telefone} | ${assunto} | ${mensagem}`
+        }
+    </script>
 </body>
 </html>

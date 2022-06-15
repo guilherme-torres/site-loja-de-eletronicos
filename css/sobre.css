@@ -11,3 +11,33 @@
 #horizontal p {
     text-align: left;
 }
+
+#formulario {
+    margin: 20px 0;
+    text-align: left;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#formulario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formulario #botao-enviar {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    border: 0;
+    background-color: darkblue;
+    color: white;
+    border-radius: 6px;
+}
